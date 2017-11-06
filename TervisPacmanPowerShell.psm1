@@ -4,8 +4,6 @@
 bmon
 fish
 nftables
-openssh
-pacman
 parted
 sudo
 tmux
@@ -30,7 +28,7 @@ function New-PacmanPackageInstallCommand {
     }
     end {
         $Arguements = $PackageNames -join " "
-        "pacman -Syu $Arguements"
+        "pacman --noconfirm -Syu $Arguements"
     }
 }
 
