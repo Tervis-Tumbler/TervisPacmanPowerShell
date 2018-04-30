@@ -8,6 +8,17 @@ parted
 sudo
 tmux
 "@ -split "`r`n"
+},
+[PSCustomObject][Ordered] @{
+    Name = "Kubernetes"
+    PackageName = @"
+base-devel
+bmon
+fish
+nftables
+sudo
+tmux
+"@ -split "`r`n"
 }
 
 function Get-TervisPacmanPackageGroup {
